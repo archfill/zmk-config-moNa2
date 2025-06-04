@@ -54,7 +54,7 @@
 
         bluetoothLayer {
             bindings = <&mo LY_BLUETOOTH>;
-            key-positions = <34 35>;
+            key-positions = <0 1>;
         };
     };
 
