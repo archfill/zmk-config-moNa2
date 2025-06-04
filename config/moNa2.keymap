@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -27,11 +28,11 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
 
 // レイヤー定義
+
 #define LY_US_DEFAULT         0
 #define LY_US_NUM             1
 #define LY_US_SYMBOL_ARROW    2
@@ -41,7 +42,6 @@
 #define LY_MOUSE              6
 #define LY_SCROLL             7
 #define LY_BLUETOOTH          8
-
 
 &mt {
     flavor = "balanced";
@@ -54,7 +54,7 @@
 
         bluetoothLayer {
             bindings = <&mo LY_BLUETOOTH>;
-            key-positions = <41 40>;
+            key-positions = <34 35>;
         };
     };
 
@@ -135,10 +135,10 @@
 
         jis_num {
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                          &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans    &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp F11       &trans        &trans        &trans        &trans        &trans    &trans  &kp ESCAPE    &trans        &trans        &trans        &kp F12
-&trans        &trans        &trans        &trans        &trans        &trans    &trans  &kp LS(ENTER)                                           &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                          &kp F6         &kp F7        &kp F8        &kp F9        &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans    &trans  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp F11       &trans        &trans        &trans        &trans        &trans    &trans  &kp ESCAPE     &trans        &trans        &trans        &kp F12
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &kp LS(ENTER)                                            &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
