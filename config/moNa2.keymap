@@ -43,6 +43,10 @@
 #define LY_SCROLL             7
 #define LY_BLUETOOTH          8
 
+&behavior_hold_tap {
+    tapping-term-ms = <200>;
+};
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
