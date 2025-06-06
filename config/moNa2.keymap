@@ -44,9 +44,7 @@
 #define LY_SCROLL             8
 #define LY_BLUETOOTH          9
 
-&lt {
-    tapping-term-ms = <200>;
-};
+&lt { tapping-term-ms = <200>; };
 
 &mt {
     flavor = "balanced";
@@ -163,10 +161,10 @@
 
         function {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LA(LC(SPACE))    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
