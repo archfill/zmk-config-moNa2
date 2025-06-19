@@ -67,11 +67,6 @@
             bindings = <&mo LY_BLUETOOTH>;
             key-positions = <0 1>;
         };
-
-        ttest {
-            bindings = <&kp A>;
-            key-positions = <4 3 14 34>;
-        };
     };
 
     macros {
