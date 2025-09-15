@@ -44,9 +44,9 @@
 #define LY_MOUSE                   7
 #define LY_SCROLL                  8
 #define LY_BLUETOOTH               9
-#define LY_JIS_GAME_DEFAULT        9
-#define LY_JIS_GAME_NUM            9
-#define LY_JIS_GAME_SYMBOL_ARROW   9
+#define LY_JIS_GAME_DEFAULT        10
+#define LY_JIS_GAME_NUM            11
+#define LY_JIS_GAME_SYMBOL_ARROW   12
 
 &lt {
     flavor = "tap-preferred";
